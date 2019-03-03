@@ -1,0 +1,54 @@
+/* In type partial */
+
+// -- TYPOGRAPHY --//
+// GlacialIndifference-Regular Font
+@font-face {
+	font-family: 'GlacialIndifference-Regular';
+	src: url('../fonts/GlacialIndifference-Regular.eot');
+	src: local('☺'), url('../fonts/GlacialIndifference-Regular.woff') format('woff'),
+  url('../fonts/GlacialIndifference-Regular.ttf') format('truetype'),
+  url('../fonts/GlacialIndifference-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// GlacialIndifference-Bold Font
+@font-face {
+	font-family: 'GlacialIndifference-Bold';
+	src: url('../fonts/GlacialIndifference-Bold.eot');
+	src: local('☺'), url('../fonts/GlacialIndifference-Bold.woff') format('woff'),
+  url('../fonts/GlacialIndifference-Bold.ttf') format('truetype'),
+  url('../fonts/GlacialIndifference-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Romantically Font
+@font-face {
+	font-family: 'Romantically';
+	src: url('../fonts/Romantically.eot');
+	src: local('☺'), url('../fonts/Romantically.woff') format('woff'),
+  url('../fonts/Romantically.ttf') format('truetype'),
+  url('../fonts/Romantically.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// MoolBoran Font
+@font-face {
+	font-family: 'MoolBoran';
+	src: url('../fonts/MoolBoran.eot');
+	src: local('☺'), url('../fonts/MoolBoran.woff') format('woff'),
+  url('../fonts/MoolBoran.ttf') format('truetype'),
+  url('../fonts/MoolBoran.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Standardise the font-family names */
+$font-family: 'GlacialIndifference-Regular', sans-serif;
+$font-headings: 'MoolBoran';
+$font-stylish: 'Romantically';
+
+/* Colors  */
+$black: #000000; 

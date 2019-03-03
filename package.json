@@ -1,0 +1,31 @@
+{
+  "name": "midterm",
+  "version": "1.0.0",
+  "description": "It is midterm project.",
+  "main": "index.html",
+  "scripts": {
+    "test": "Nothing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pate0564/pate0564.github.io.git"
+  },
+  "keywords": [
+    "Midterm",
+    "Project"
+  ],
+  "author": "pate0564",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pate0564/pate0564.github.io/issues"
+  },
+  "homepage": "https://github.com/pate0564/pate0564.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.9",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
