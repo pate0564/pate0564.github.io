@@ -45,10 +45,15 @@
 	font-style: normal;
 }
 
-/* Standardise the font-family names */
+// Standardise the font-family names
 $font-family: 'GlacialIndifference-Regular', sans-serif;
 $font-headings: 'MoolBoran';
 $font-stylish: 'Romantically';
 
-/* Colors  */
-$black: #000000; 
+$font-size-base: 1.5rem;
+$font-size-h2: 3rem;
+
+//-- COLORS  --//
+$primary-color: #f7931e;
+$secondary-color: #000000;
+$white: #ffffff;
