@@ -1,10 +1,10 @@
 {
-  "name": "midterm",
+  "name": "pate0564.github.io",
   "version": "1.0.0",
-  "description": "It is midterm project.",
-  "main": "index.html",
+  "description": "Midterm Project Repository",
+  "main": "\u001b[A\u001b[B",
   "scripts": {
-    "test": "Nothing"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "Midterm",
-    "Project"
+    "Prject"
   ],
   "author": "pate0564",
   "license": "ISC",
