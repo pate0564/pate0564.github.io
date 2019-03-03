@@ -28,8 +28,6 @@
   font-weight: normal;
   font-style: normal; }
 
-/* Standardise the font-family names */
-/* Colors  */
 /* Layout:
   1. Common
   2. Home
@@ -38,9 +36,34 @@
   5.
 */
 body {
-  font-family: "GlacialIndifference-Regular", sans-serif; }
+  font-family: "GlacialIndifference-Regular", sans-serif;
+  font-size: 1.5rem; }
+
+p {
+  font-size: 1.5rem; }
+
+h2 {
+  font-family: "MoolBoran";
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+.seprator {
+  display: inline-block;
+  width: 80px;
+  height: 3px;
+  background-color: #f7931e;
+  border-radius: 100px; }
+
+.fancy-text {
+  font-family: "Romantically";
+  margin: 0;
+  padding-top: 2.5rem; }
 
 .about {
   background-color: #000000;
-  padding: 15rem 0;
+  padding: 10rem 0;
   text-align: center; }
+  .about h2 {
+    color: #ffffff; }
+  .about p {
+    color: #ffffff; }
