@@ -1,0 +1,21 @@
+@import 'variable';
+
+/* Layout:
+  1. Common
+  2. Home
+  3. About
+  4.
+  5.
+*/
+
+// Common
+body {
+  font-family: $font-family;
+}
+
+
+// 3. About
+.about {
+  background-color: $black;
+  padding: 20rem 0;
+}
