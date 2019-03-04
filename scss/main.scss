@@ -331,3 +331,20 @@ h2 {
   padding: 1rem 0;
   background-color: $gray;
 }
+
+@media (max-width: 768px){
+  .home .text {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .work .work-list-items,
+  .work .work-list-items .work-list-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    .work-list-item-content p {
+      max-width: 100%;
+      padding: 10rem 0;
+    }
+  }
+}
