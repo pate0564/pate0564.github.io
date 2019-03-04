@@ -47,9 +47,12 @@
 
 // Standardise the font-family names
 $font-family: 'GlacialIndifference-Regular', sans-serif;
+$font-family-bold: 'GlacialIndifference-Bold';
 $font-headings: 'MoolBoran';
 $font-stylish: 'Romantically';
 
+$font-small: 1.125rem;
+$font-btn-size: 1.3rem;
 $font-size-base: 1.5rem;
 $font-size-h2: 3rem;
 
@@ -57,3 +60,13 @@ $font-size-h2: 3rem;
 $primary-color: #f7931e;
 $secondary-color: #000000;
 $white: #ffffff;
+$gray: #f7f7f7;
+
+//-- BUTTONS --//
+$btn-primary-color: $secondary-color;
+$btn-primary-bg: $white;
+$btn-primary-border: darken($btn-primary-bg, 5%);
+
+$btn-secondary-color: $white;
+$btn-secondary-bg: $secondary-color;
+$btn-secondary-border: darken($btn-secondary-bg, 5%);
