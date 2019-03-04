@@ -4,11 +4,15 @@
   1. Common
   2. Home
   3. About
-  4.
-  5.
+  4. Work
+  5. Concept
+  6. Project
+  7. Contact By Email
+  8. Contact
+  9. Copyright
 */
 
-// Common
+// 1. Common
 body {
   font-family: $font-family;
   font-size: $font-size-base;
@@ -20,6 +24,7 @@ h2 {
   font-family: $font-headings;
   font-size: $font-size-h2;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 .seprator {
   display: inline-block;
@@ -30,12 +35,136 @@ h2 {
 }
 .fancy-text {
   font-family: $font-stylish;
-  margin: 0;
   padding-top: 2.5rem;
+}
+
+// Form CSS
+.form-control {
+    padding: 1rem;
+    font-size: $font-size-base;
+    color: $secondary-color;
+    background-color: $white;
+    border: 2px solid $secondary-color;
+    border-radius: 0;
+    &:focus {
+      box-shadow: 0 0 0 0.2rem $primary-color;
+      border-color: darken($primary-color, 10%);
+    }
+}
+
+// Button CSS
+.btn {
+  border-radius: 0;
+  font-size: $font-btn-size;
+  text-transform: uppercase;
+  min-width: 200px;
+  padding: 1rem 4rem;
+}
+// Primary Button
+.btn-primary {
+  background-color: $btn-primary-bg;
+  color: $btn-primary-color;
+  border-color: $btn-primary-border;
+  &:hover {
+    background-color: $primary-color;
+    border-color: darken($primary-color, 5%);
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $primary-color;
+  }
+  &:not(:disabled) {
+    &:not(.disabled) {
+      &.active,
+      &:active {
+        color: inherit;
+        background-color: $primary-color;
+        border-color: darken($primary-color, 5%);
+        &:focus {
+          box-shadow: 0 0 0 0.2rem $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// Secondary Button
+.btn-secondary {
+  background-color: $btn-secondary-bg;
+  color: $btn-secondary-color;
+  border-color: $btn-secondary-border;
+  &:hover {
+    background-color: $primary-color;
+    border-color: darken($primary-color, 5%);
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $primary-color;
+  }
+  &:not(:disabled) {
+    &:not(.disabled) {
+      &.active,
+      &:active {
+        color: inherit;
+        background-color: $primary-color;
+        border-color: darken($primary-color, 5%);
+        &:focus {
+          box-shadow: 0 0 0 0.2rem $primary-color;
+        }
+      }
+    }
+  }
+}
+
+
+// 2. Home
+.home {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: #ffffff url('../images/home.png') no-repeat center center;
+  background-size: 20%;
+  .navbar-light .navbar-nav .nav-link {
+    color: $secondary-color;
+    transition: color .15s ease-in-out;
+    &:hover {
+      color: $primary-color;
+      transition: color .15s ease-in-out;
+    }
+  }
+  .navbar-light .navbar-nav .active>.nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show>.nav-link {
+    color: $primary-color;
+  }
+  .small {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  .text {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -30%);
+  }
+  .social-links {
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+  }
+  .scroll-down {
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+    img {
+      width: 70%;
+    }
+  }
 }
 
 // 3. About
 .about {
+  position: relative;
   background-color: $secondary-color;
   padding: 10rem 0;
   text-align: center;
@@ -45,4 +174,160 @@ h2 {
     p {
       color: $white;
     }
+}
+
+// 4. Work
+.work {
+  position: relative;
+  padding: 10rem 0;
+  .work-list-items {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .work-list-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      max-width: 450px;
+      min-height: 450px;
+      background-color: $primary-color;
+      &:nth-child(even) {
+        background-color: $gray;
+      }
+      &:nth-child(1) {
+        order: 0;
+      }
+      &:nth-child(2) {
+        order: 1;
+      }
+      &:nth-child(3) {
+        order: 4;
+      }
+      &:nth-child(4) {
+        order: 3;
+      }
+      &:nth-child(5) {
+        order: 5;
+      }
+      &:nth-child(6) {
+        order: 6;
+      }
+      .work-list-item-content {
+        p {
+          @extend h2;
+          text-transform: none;
+          max-width: 300px;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}
+
+// 5. Concept
+.concept {
+  position: relative;
+  padding: 10rem 0;
+  background: $secondary-color url('../images/concept.png') no-repeat center bottom;
+  background-size: contain;
+  h2 {
+    color: $white;
+  }
+}
+
+// 6. Projects
+.projects {
+  position: relative;
+  padding: 10rem 0;
+  .seprator {
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    transform: translate(-50%);
+    background-color: $secondary-color;
+  }
+  h2 {
+    margin: 0;
+    color: $primary-color;
+  }
+  .small {
+    margin: 0;
+    font-size: $font-small;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+}
+
+// 7. contactByEmail
+.contactByEmail {
+  position: relative;
+  padding: 5rem 0;
+  background-color: $primary-color;
+  color: $white;
+  .btn-primary {
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      border-color: darken($primary-color, 5%);
+    }
+    &:focus {
+      background-color: darken($primary-color, 10%);
+      box-shadow: 0 0 0 0.2rem $primary-color;
+    }
+    &:not(:disabled) {
+      &:not(.disabled) {
+        &.active,
+        &:active {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+// 8. Contact
+.contact {
+  position: relative;
+  padding: 10rem 0;
+  background-color: $gray;
+  .contact-left {
+    background-color: $white;
+    padding: 1rem 2rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding-left: 2.5rem;
+      &.call {
+        background: url('../images/call.png') no-repeat left center;
+        background-size: 5%;
+      }
+      &.email {
+        background: url('../images/email.png') no-repeat left center;
+        background-size: 5%;
+      }
+      a {
+        font-size: $font-size-base;
+        color: $secondary-color;
+        transition: color .15s ease-in-out;
+        &:hover {
+          color: $primary-color;
+          text-decoration: none;
+          transition: color .15s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+// 9. Copyright
+.copyright {
+  position: relative;
+  padding: 1rem 0;
+  background-color: $gray;
 }

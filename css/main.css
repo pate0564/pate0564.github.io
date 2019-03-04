@@ -32,8 +32,12 @@
   1. Common
   2. Home
   3. About
-  4.
-  5.
+  4. Work
+  5. Concept
+  6. Project
+  7. Contact By Email
+  8. Contact
+  9. Copyright
 */
 body {
   font-family: "GlacialIndifference-Regular", sans-serif;
@@ -42,10 +46,11 @@ body {
 p {
   font-size: 1.5rem; }
 
-h2 {
+h2, .work .work-list-items .work-list-item .work-list-item-content p {
   font-family: "MoolBoran";
   font-size: 3rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
 
 .seprator {
   display: inline-block;
@@ -56,14 +61,211 @@ h2 {
 
 .fancy-text {
   font-family: "Romantically";
-  margin: 0;
   padding-top: 2.5rem; }
 
+.form-control {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0; }
+  .form-control:focus {
+    box-shadow: 0 0 0 0.2rem #f7931e;
+    border-color: #da7908; }
+
+.btn {
+  border-radius: 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  min-width: 200px;
+  padding: 1rem 4rem; }
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #f2f2f2; }
+  .btn-primary:hover {
+    background-color: #f7931e;
+    border-color: #f38709; }
+  .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem #f7931e; }
+  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+    color: inherit;
+    background-color: #f7931e;
+    border-color: #f38709; }
+    .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+      box-shadow: 0 0 0 0.2rem #f7931e; }
+
+.btn-secondary {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: black; }
+  .btn-secondary:hover {
+    background-color: #f7931e;
+    border-color: #f38709; }
+  .btn-secondary:focus {
+    box-shadow: 0 0 0 0.2rem #f7931e; }
+  .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active {
+    color: inherit;
+    background-color: #f7931e;
+    border-color: #f38709; }
+    .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus {
+      box-shadow: 0 0 0 0.2rem #f7931e; }
+
+.home {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: #ffffff url("../images/home.png") no-repeat center center;
+  background-size: 20%; }
+  .home .navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    transition: color .15s ease-in-out; }
+    .home .navbar-light .navbar-nav .nav-link:hover {
+      color: #f7931e;
+      transition: color .15s ease-in-out; }
+  .home .navbar-light .navbar-nav .active > .nav-link,
+  .home .navbar-light .navbar-nav .nav-link.active,
+  .home .navbar-light .navbar-nav .nav-link.show,
+  .home .navbar-light .navbar-nav .show > .nav-link {
+    color: #f7931e; }
+  .home .small {
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
+  .home .text {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -30%); }
+  .home .social-links {
+    position: absolute;
+    bottom: 3%;
+    left: 2%; }
+  .home .scroll-down {
+    position: absolute;
+    bottom: 3%;
+    right: 1%; }
+    .home .scroll-down img {
+      width: 70%; }
+
 .about {
+  position: relative;
   background-color: #000000;
   padding: 10rem 0;
   text-align: center; }
-  .about h2 {
+  .about h2, .about .work .work-list-items .work-list-item .work-list-item-content p, .work .work-list-items .work-list-item .work-list-item-content .about p {
     color: #ffffff; }
   .about p {
     color: #ffffff; }
+
+.work {
+  position: relative;
+  padding: 10rem 0; }
+  .work .work-list-items {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .work .work-list-items .work-list-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      max-width: 450px;
+      min-height: 450px;
+      background-color: #f7931e; }
+      .work .work-list-items .work-list-item:nth-child(even) {
+        background-color: #f7f7f7; }
+      .work .work-list-items .work-list-item:nth-child(1) {
+        order: 0; }
+      .work .work-list-items .work-list-item:nth-child(2) {
+        order: 1; }
+      .work .work-list-items .work-list-item:nth-child(3) {
+        order: 4; }
+      .work .work-list-items .work-list-item:nth-child(4) {
+        order: 3; }
+      .work .work-list-items .work-list-item:nth-child(5) {
+        order: 5; }
+      .work .work-list-items .work-list-item:nth-child(6) {
+        order: 6; }
+      .work .work-list-items .work-list-item .work-list-item-content p {
+        text-transform: none;
+        max-width: 300px;
+        line-height: 3rem; }
+
+.concept {
+  position: relative;
+  padding: 10rem 0;
+  background: #000000 url("../images/concept.png") no-repeat center bottom;
+  background-size: contain; }
+  .concept h2, .concept .work .work-list-items .work-list-item .work-list-item-content p, .work .work-list-items .work-list-item .work-list-item-content .concept p {
+    color: #ffffff; }
+
+.projects {
+  position: relative;
+  padding: 10rem 0; }
+  .projects .seprator {
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    transform: translate(-50%);
+    background-color: #000000; }
+  .projects h2, .projects .work .work-list-items .work-list-item .work-list-item-content p, .work .work-list-items .work-list-item .work-list-item-content .projects p {
+    margin: 0;
+    color: #f7931e; }
+  .projects .small {
+    margin: 0;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
+
+.contactByEmail {
+  position: relative;
+  padding: 5rem 0;
+  background-color: #f7931e;
+  color: #ffffff; }
+  .contactByEmail .btn-primary:hover {
+    background-color: #da7908;
+    border-color: #f38709; }
+  .contactByEmail .btn-primary:focus {
+    background-color: #da7908;
+    box-shadow: 0 0 0 0.2rem #f7931e; }
+  .contactByEmail .btn-primary:not(:disabled):not(.disabled).active, .contactByEmail .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #da7908; }
+
+.contact {
+  position: relative;
+  padding: 10rem 0;
+  background-color: #f7f7f7; }
+  .contact .contact-left {
+    background-color: #ffffff;
+    padding: 1rem 2rem; }
+  .contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .contact ul li {
+      padding-left: 2.5rem; }
+      .contact ul li.call {
+        background: url("../images/call.png") no-repeat left center;
+        background-size: 5%; }
+      .contact ul li.email {
+        background: url("../images/email.png") no-repeat left center;
+        background-size: 5%; }
+      .contact ul li a {
+        font-size: 1.5rem;
+        color: #000000;
+        transition: color .15s ease-in-out; }
+        .contact ul li a:hover {
+          color: #f7931e;
+          text-decoration: none;
+          transition: color .15s ease-in-out; }
+
+.copyright {
+  position: relative;
+  padding: 1rem 0;
+  background-color: #f7f7f7; }

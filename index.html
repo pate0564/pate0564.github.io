@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Payal Patel</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.ico" sizes="16x16 32x32" type="image/png">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,12 +23,58 @@
   <body>
 
     <!-- Home Section -->
-    <section class="home">
+    <section class="home" id="home">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="../images/sitelogo.png" width="60" height="60" alt="sitelogo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text">
+        <h2>Payal Patel</h2>
+        <p class="small">Web & ux / ui design</p>
+      </div>
+      <ul class="social-links list-unstyled">
+        <li>
+          <a href="https://instagram.com/payal/" target="_blank">
+            <img src="../images/instagram.png" alt="instagram">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/patel.payal.6969" target="_blank">
+            <img src="../images/facebook.png" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/payal-patel-p5959p/" target="_blank">
+            <img src="../images/linkedin.png" alt="linkedin">
+          </a>
+        </li>
+      </ul>
+      <!-- <a class="scroll-down"><img src="../images/scrolldown.png" width="1.5%"/></a> -->
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
@@ -44,59 +90,165 @@
           <div class="col-md-6">
             <img src="images/introduction.jpg" alt="introduction" class="img-fluid">
           </div>
-        </div>">
-
         </div>
       </div>
     </section>
 
     <!-- Work Section -->
-    <section class="work">
+    <section class="work" id="portfolio">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-6 border">
-            abc
+        <div class="work-list-items">
+          <div class="work-list-item">
+            <div class="work-list-item-content">
+              <img src="images/webdesign.png" alt="webdesign">
+            </div>
           </div>
-          <div class="col-sm-6 border">
-            abc
+          <div class="work-list-item">
+            <div class="work-list-item-content">
+              <p>UI/UX and Web Design</p>
+            </div>
           </div>
-
-          <div class="w-100"></div>
-
-          <div class="col-sm-6 border">
-            abc
+          <div class="work-list-item">
+            <div class="work-list-item-content">
+              <img src="images/graphic.png" alt="graphic">
+            </div>
           </div>
-          <div class="col-sm-6 border">
-            abc
+          <div class="work-list-item">
+            <div class="work-list-item-content">
+              <p>Graphic and illustration</p>
+            </div>
+          </div>
+          <div class="work-list-item">
+            <div class="work-list-item-content">
+              <img src="images/logo.png" alt="logo">
+            </div>
+          </div>
+          <div class="work-list-item">
+            <div class="work-list-item-content">
+              <p>Logo Design and Typography</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- Web Design Concept -->
+    <section class="concept">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Web design concept</h2>
+            <p class="seprator mx-auto"></p>
+          </div>
+          <div class="col-md-4">
+            <a href="JavaScript:void(0);" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Project Section -->
-    <section>
-
+    <!-- Project -->
+    <section class="projects">
+      <div class="container">
+        <div class="row mb-md-4 align-items-center">
+          <div class="col-md-8">
+            <p class="seprator"></p>
+            <h2>Wordpress</h2>
+            <p class="small">Web design / ui design</p>
+          </div>
+          <div class="col-md-4">
+            <a href="JavaScript:void(0);" class="btn btn-secondary">View Project</a>
+          </div>
+        </div>
+        <div class="row mb-md-4 align-items-center">
+          <div class="col-md-8">
+            <p class="seprator"></p>
+            <h2 class="">Joomla</h2>
+            <p class="small">Web design / ui design</p>
+          </div>
+          <div class="col-md-4">
+            <a href="JavaScript:void(0);" class="btn btn-secondary">View Project</a>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p class="seprator"></p>
+            <h2 class="">Drupal</h2>
+            <p class="small">Web design / ui design</p>
+          </div>
+          <div class="col-md-4">
+            <a href="JavaScript:void(0);" class="btn btn-secondary">View Project</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact By Email -->
     <section class="contactByEmail text-center">
       <h2 class="text-uppercase">Let's Talk</h2>
       <p>I am available for freelance work as well.</p>
-      <button type="button" name="button" class="btn btn-bg-primary">Contact Me</button>
+      <a href="JavaScript:void(0);" class="btn btn-primary">Contact Me</a>
     </section>
 
     <!-- Conact Section -->
-    <section class="contact">
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row mb-md-5">
+          <div class="col-md-12">
+            <h2 class="text-center">Contact Me</h2>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="contact-left">
+              <h5 class="fancy-text">Get in Touch</h5>
+              <p class="my-4">Feel free to contact and get work done!</p>
+            </div>
+            <ul class="px-4 py-5">
+              <li class="call"><a href="tel:3439872011"> +1 343 987 2011</a></li>
+              <li class="email"><a href="mailto:payalpatel5959@gmail.com">payalpatel5959@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <textarea rows="3" cols="10" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-secondary">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Copyright  -->
+    <section class="copyright text-center">
+      <p><small>Copyrights &copy;  All rights reserved 2019</small> </p>
     </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      // Scroll to ID
+      jQuery("a[href^='#']").click(function(e) {
+      	e.preventDefault();
+      	var position = jQuery(jQuery(this).attr("href")).offset().top;
+      	jQuery("body, html").animate({
+      		scrollTop: position;
+      	} /* speed */ );
+    });
+    </script>
+
   </body>
 </html>
