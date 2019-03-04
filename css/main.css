@@ -269,3 +269,17 @@ h2, .work .work-list-items .work-list-item .work-list-item-content p {
   position: relative;
   padding: 1rem 0;
   background-color: #f7f7f7; }
+
+@media (max-width: 768px) {
+  .home .text {
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .work .work-list-items,
+  .work .work-list-items .work-list-item {
+    display: block;
+    width: 100%;
+    text-align: center; }
+    .work .work-list-items .work-list-item-content p,
+    .work .work-list-items .work-list-item .work-list-item-content p {
+      max-width: 100%;
+      padding: 10rem 0; } }
