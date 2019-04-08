@@ -24,14 +24,15 @@
 
     <!-- Home Section -->
     <section class="home" id="home">
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-          <img src="../images/sitelogo.png" width="60" height="60" alt="sitelogo">
+            <img src="../images/sitelogo.png" width="60px" alt="sitelogo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -41,10 +42,16 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#project">Projects</a>
+            </li>           
+            <li class="nav-item">
+                <a class="nav-link" href="pdf/payalpatel.pdf">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -88,14 +95,14 @@
               <p class="fancy-text">How may I help you?</p>
           </div>
           <div class="col-md-6">
-            <img src="images/introduction.jpg" alt="introduction" class="img-fluid">
+            <img src="images/introduction.jpg" alt="introduction" width="400px" class="img-fluid">
           </div>
         </div>
       </div>
     </section>
 
     <!-- Work Section -->
-    <section class="work" id="portfolio">
+    <section class="work" id="skills">
       <div class="container">
         <div class="work-list-items">
           <div class="work-list-item">
@@ -141,7 +148,7 @@
             <p class="seprator mx-auto"></p>
           </div>
           <div class="col-md-4">
-            <a href="JavaScript:void(0);" class="btn btn-primary">View Project</a>
+            <a href="https://pate0564.edumedia.ca/mtm6231/final/" target="_blank" class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
@@ -157,7 +164,7 @@
             <p class="small">Web design / ui design</p>
           </div>
           <div class="col-md-4">
-            <a href="JavaScript:void(0);" class="btn btn-secondary">View Project</a>
+            <a href="https://pate0564.edumedia.ca/mtm6231/assg01/" target="_blank" class="btn btn-secondary">View Project</a>
           </div>
         </div>
         <div class="row mb-md-4 align-items-center">
@@ -167,7 +174,7 @@
             <p class="small">Web design / ui design</p>
           </div>
           <div class="col-md-4">
-            <a href="JavaScript:void(0);" class="btn btn-secondary">View Project</a>
+            <a href="https://pate0564.edumedia.ca/mtm6231/assg02" target="_blank" class="btn btn-secondary">View Project</a>
           </div>
         </div>
         <div class="row align-items-center">
@@ -177,7 +184,7 @@
             <p class="small">Web design / ui design</p>
           </div>
           <div class="col-md-4">
-            <a href="JavaScript:void(0);" class="btn btn-secondary">View Project</a>
+            <a href="https://pate0564.edumedia.ca/mtm6231/assg03" target="_blank" class="btn btn-secondary">View Project</a>
           </div>
         </div>
       </div>
@@ -187,7 +194,7 @@
     <section class="contactByEmail text-center">
       <h2 class="text-uppercase">Let's Talk</h2>
       <p>I am available for freelance work as well.</p>
-      <a href="JavaScript:void(0);" class="btn btn-primary">Contact Me</a>
+      <a href="mailto:payalpatel5959@gmail.com" class="btn btn-primary">Contact Me</a>
     </section>
 
     <!-- Conact Section -->
@@ -233,20 +240,25 @@
     </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <script type="text/javascript">
-    $(document).ready(function(){
-      // Scroll to ID
-      jQuery("a[href^='#']").click(function(e) {
-      	e.preventDefault();
-      	var position = jQuery(jQuery(this).attr("href")).offset().top;
-      	jQuery("body, html").animate({
-      		scrollTop: position;
-      	} /* speed */ );
+    // Scroll to section
+    jQuery(document).ready(function() {
+      jQuery('a[href^="#"]').click(function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+        if (target.length) {
+          jQuery('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000, 'easeInOutExpo');
+          return false;
+        }
+      });
     });
     </script>
 

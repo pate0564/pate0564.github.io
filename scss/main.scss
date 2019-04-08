@@ -1,4 +1,6 @@
+
 @import 'variable';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 /* Layout:
   1. Common
@@ -122,8 +124,23 @@ h2 {
   height: 100vh;
   background: #ffffff url('../images/home.png') no-repeat center center;
   background-size: 20%;
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
   .navbar-light .navbar-nav .nav-link {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $font-headings;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: $secondary-color;
+    padding: 0;
+    margin: 0 1rem;
     transition: color .15s ease-in-out;
     &:hover {
       color: $primary-color;
