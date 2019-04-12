@@ -7054,12 +7054,13 @@ a.text-dark:hover, a.text-dark:focus {
   1. Common
   2. Home
   3. About
-  4. Work
-  5. Concept
-  6. Project
-  7. Contact By Email
-  8. Contact
-  9. Copyright
+  4. Portfolio
+  5. Work
+  6. Concept
+  7. Project
+  8. Contact By Email
+  9. Contact
+  10.Copyright
 */
 body {
   font-family: "GlacialIndifference-Regular", sans-serif;
@@ -7084,6 +7085,9 @@ h2, .work .work-list-items .work-list-item .work-list-item-content p {
 .fancy-text {
   font-family: "Romantically";
   padding-top: 2.5rem; }
+
+.primary-text {
+  color: #f7931e; }
 
 .form-control {
   padding: 1rem;
@@ -7195,9 +7199,84 @@ h2, .work .work-list-items .work-list-item .work-list-item-content p {
   .about p {
     color: #ffffff; }
 
+.portfolio {
+  padding: 8rem 0; }
+  .portfolio .hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #000000; }
+  .portfolio .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 3em;
+    text-align: left; }
+  .portfolio .hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 60px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0); }
+  .portfolio .hovereffect h2, .portfolio .hovereffect .work .work-list-items .work-list-item .work-list-item-content p, .work .work-list-items .work-list-item .work-list-item-content .portfolio .hovereffect p {
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    padding: 15% 0 10px 0;
+    text-align: left; }
+  .portfolio .hovereffect .overlay:before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid #fff;
+    content: '';
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
+  .portfolio .p-title {
+    color: #f7931e; }
+  .portfolio .p-desc {
+    color: #f7f7f7; }
+  .portfolio .hovereffect a, .portfolio .hovereffect p {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+  .portfolio .hovereffect:hover img {
+    opacity: 0.3;
+    filter: alpha(opacity=60);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .portfolio .hovereffect:hover .overlay:before,
+  .portfolio .hovereffect:hover a, .portfolio .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
 .work {
   position: relative;
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  background-color: #efefef; }
   .work .work-list-items {
     display: -webkit-flex;
     display: -ms-flexbox;

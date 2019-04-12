@@ -41,14 +41,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-            </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="#project">Projects</a>
-            </li>           
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="pdf/payalpatel.pdf">Resume</a>
+              <a class="nav-link" href="#skills">Skills</a>
+          </li>           
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="pdf/Resume.pdf">Resume</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -101,9 +101,69 @@
       </div>
     </section>
 
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Portfolio</h2>
+            <p class="seprator mx-auto"></p>
+          </div>
+        </div>
+      
+        <div class="row mt-3">
+          <div class="col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/p01.png" alt="">
+                <div class="overlay">
+                    <p class="h5 p-title">Fritz & Rose</p>
+                    <p class="small p-desc">Web Design</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/p02.png" alt="">
+                <div class="overlay">
+                  <p class="h5 p-title">Modastylz</p>
+                  <p class="small p-desc">Web Design</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/p03.png" alt="">
+                <div class="overlay">
+                  <p class="h5 p-title">MyFundbucket</p>
+                  <p class="small p-desc">UX</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/p04.png" alt="">
+                <div class="overlay">
+                  <p class="h5 p-title">MyFundbucket</p>
+                  <p class="small p-desc">Design & Development</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Work Section -->
     <section class="work" id="skills">
-      <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 px-5">
+            <h2>Skills</h2>
+          </div>
+        </div>
+      </div>
+      <div class="">
         <div class="work-list-items">
           <div class="work-list-item">
             <div class="work-list-item-content">
@@ -239,28 +299,10 @@
       <p><small>Copyrights &copy;  All rights reserved 2019</small> </p>
     </section>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="./js/min/main.min.js"></script>
 
-    <script type="text/javascript">
-    // Scroll to section
-    jQuery(document).ready(function() {
-      jQuery('a[href^="#"]').click(function() {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-        if (target.length) {
-          jQuery('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000, 'easeInOutExpo');
-          return false;
-        }
-      });
-    });
-    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
   </body>
 </html>
