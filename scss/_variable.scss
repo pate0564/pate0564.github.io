@@ -1,35 +1,49 @@
 /* In type partial */
 
 // -- TYPOGRAPHY --//
-// GlacialIndifference-Regular Font
+// Futura-Light Font
 @font-face {
-	font-family: 'GlacialIndifference-Regular';
-	src: url('../fonts/GlacialIndifference-Regular.eot');
-	src: local('☺'), url('../fonts/GlacialIndifference-Regular.woff') format('woff'),
-  url('../fonts/GlacialIndifference-Regular.ttf') format('truetype'),
-  url('../fonts/GlacialIndifference-Regular.svg') format('svg');
+	font-family: 'futura-light-bt';
+	src: url('../fonts/futura light bt/futura light bt.eot');
+	src: local('☺'), url('../fonts/futura light bt/futura light bt.woff') format('woff'),
+  url('../fonts/futura light bt/futura light bt.ttf') format('truetype'),
+  url('../fonts/futura light bt/futura light bt.svg') format('svg'),
+	url('../fonts/futura light bt/futura light bt.otf') format('otf');
 	font-weight: normal;
 	font-style: normal;
 }
 
-// GlacialIndifference-Bold Font
+// Futura-Medium Font
 @font-face {
-	font-family: 'GlacialIndifference-Bold';
-	src: url('../fonts/GlacialIndifference-Bold.eot');
-	src: local('☺'), url('../fonts/GlacialIndifference-Bold.woff') format('woff'),
-  url('../fonts/GlacialIndifference-Bold.ttf') format('truetype'),
-  url('../fonts/GlacialIndifference-Bold.svg') format('svg');
+	font-family: 'futura-medium-bt';
+	src: url('../fonts/futura medium bt/futura medium bt.eot');
+	src: local('☺'), url('../fonts/futura medium bt/futura medium bt.woff') format('woff'),
+  url('../fonts/futura medium bt/futura medium bt.ttf') format('truetype'),
+  url('../fonts/futura medium bt/futura medium bt.svg') format('svg'),
+	url('../fonts/futura medium bt/futura medium bt.otf') format('otf');
 	font-weight: normal;
 	font-style: normal;
 }
 
-// Romantically Font
+// Futura-Heavy Font
 @font-face {
-	font-family: 'Romantically';
-	src: url('../fonts/Romantically.eot');
-	src: local('☺'), url('../fonts/Romantically.woff') format('woff'),
-  url('../fonts/Romantically.ttf') format('truetype'),
-  url('../fonts/Romantically.svg') format('svg');
+	font-family: 'futura-heavy';
+	src: url('../fonts/futura-heavy/futura-heavy.eot');
+	src: local('☺'), url('../fonts/futura-heavy/futura-heavy.woff') format('woff'),
+  url('../fonts/futura-heavy/futura-heavy.ttf') format('truetype'),
+  url('../fonts/futura-heavy/futura-heavy.svg') format('svg'),
+	url('../fonts/futura-heavy/futura-heavy.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Hublland-Regulary Font
+@font-face {
+	font-family: 'hublland-regular';
+	src: url('../fonts/hublland regular/hublland regular.eot');
+	src: local('☺'), url('../fonts/hublland regular/hublland regular.woff') format('woff'),
+  url('../fonts/hublland regular/hublland regular.ttf') format('truetype'),
+  url('../fonts/hublland regular/hublland regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -47,10 +61,11 @@
 }
 
 // Standardise the font-family names
-$font-family: 'GlacialIndifference-Regular', sans-serif;
-$font-family-bold: 'GlacialIndifference-Bold';
+$font-family: 'futura light bt', sans-serif;
+$font-family-medium: 'futura-medium-bt';
+$font-family-bold: 'futura-heavy';
 $font-headings: 'MoolBoran';
-$font-stylish: 'Romantically';
+$font-stylish: 'hublland-regular';
 
 $font-small: 1.125rem;
 $font-btn-size: 1.3rem;
@@ -58,10 +73,11 @@ $font-size-base: 1.5rem;
 $font-size-h2: 3rem;
 
 //-- COLORS  --//
-$primary-color: #f7931e;
-$secondary-color: #000000;
+$primary-color: #A61F4C;
+$secondary-color: #C69A75;
 $white: #ffffff;
 $gray: #f7f7f7;
+$black: #0D0D0D;
 
 //-- BUTTONS --//
 $btn-primary-color: $secondary-color;
