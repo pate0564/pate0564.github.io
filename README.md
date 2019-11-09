@@ -1,2 +1,2 @@
-# pate0564.github.io
-Midterm Project Repository
+# Portfolio
+My Portfolio Website
