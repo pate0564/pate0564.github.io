@@ -21,13 +21,14 @@ gulp.task('sass', function () {
     .pipe(postcss(plugins)) // apply the PostCSS plugins
     .pipe(gulp.dest('css/min')) // path to output the minified css file
     .pipe(browserSync.stream()) // run the browsersync stream
-}) 
+})
 
 gulp.task('scripts', function () {
   return gulp.src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
     'node_modules/shufflejs/dist/shuffle.js',
+    'node_modules/feather-icons/dist/feather.js',
     'js/*.js'
     ]) // setting the source files for gulp to work with
     .pipe(concat('main.js')) // running concat on all the files directly inside js folder with extension .js. The new file will be names main.js
@@ -36,11 +37,11 @@ gulp.task('scripts', function () {
     .pipe(uglify()) // now running uglify on the renamed file to minify the JavaScript
     .pipe(gulp.dest('js/min')) // saving the minified file in min folder inside js
     .pipe(browserSync.stream()) // run the browsersync stream
-}) 
+})
 // Define the default task
 gulp.task('default', function () {
 
-  // console.log('Hello Gulp!') 
+  // console.log('Hello Gulp!')
   // initialize browserSync on the current folder
   browserSync.init({ server: './' })
   // watch for changes to any files in scss folder and its sub folders and with .scss extension, run the sass task when a change is found
