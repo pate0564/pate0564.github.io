@@ -1,0 +1,14 @@
+.home.subpages {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  background: #dfdfdf; }
+
+.title-section {
+  position: relative;
+  background-color: #F8F7F9;
+  padding: 4rem;
+  height: 70vh; }
+  .title-section .breadcrumb {
+    background: #F8F7F9;
+    justify-content: center; }

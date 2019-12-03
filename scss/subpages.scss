@@ -1,0 +1,38 @@
+// 2. Home
+.subpages {
+  .home {
+    position: relative;
+    height: auto;
+  }
+  .about {
+    background-color: $light-gray;
+    padding: 0 0 8rem 0;
+  }
+}
+
+.title-section {
+  position: relative;
+  background-color: $light-gray;
+  padding: 4rem;
+  height: 70vh;
+  .breadcrumb {
+    background: $light-gray;
+    justify-content: center;
+  }
+
+  .image-gallery {
+    .btn:focus, .btn:active, button:focus, button:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    .thumb{
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    #image-gallery .modal-footer{
+      display: block;
+    }
+  }
+}

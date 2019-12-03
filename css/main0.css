@@ -7875,31 +7875,6 @@ a.text-dark:hover, a.text-dark:focus {
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
-.subpages .home {
-  position: relative;
-  height: auto; }
-
-.subpages .about {
-  background-color: #e5e4e5;
-  padding: 0 0 8rem 0; }
-
-.title-section {
-  position: relative;
-  background-color: #e5e4e5;
-  padding: 4rem;
-  height: 70vh; }
-  .title-section .breadcrumb {
-    background: #e5e4e5;
-    justify-content: center; }
-  .title-section .image-gallery .btn:focus, .title-section .image-gallery .btn:active, .title-section .image-gallery button:focus, .title-section .image-gallery button:active {
-    outline: none !important;
-    box-shadow: none !important; }
-  .title-section .image-gallery .thumb {
-    margin-top: 15px;
-    margin-bottom: 15px; }
-  .title-section .image-gallery #image-gallery .modal-footer {
-    display: block; }
-
 /* Layout:
   1. Common
   2. Home
@@ -7921,7 +7896,7 @@ p {
   font-family: "futura-light-bt";
   font-size: 1rem; }
 
-h2, .h2 {
+h2 {
   font-family: "futura-medium-bt";
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -7949,9 +7924,6 @@ a:hover {
 
 .primary-text {
   color: #75223D; }
-
-.image-shadow {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .form-control {
   padding: 1rem;
@@ -8158,9 +8130,6 @@ a:hover {
   padding: 8rem 0 0; }
   .collection .collection-box figure {
     margin: 0; }
-    .collection .collection-box figure > a {
-      margin-bottom: 1rem;
-      border: 1px solid #0D0D0D; }
     .collection .collection-box figure .p-title {
       color: #75223D;
       font-family: "futura-medium-bt"; }
