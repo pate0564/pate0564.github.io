@@ -2,6 +2,7 @@
 @import 'variable';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/bootstrap/scss/grid';
+@import 'subpages';
 
 /* Layout:
   1. Common
@@ -26,7 +27,7 @@ p {
   font-family: $font-family;
   font-size: $font-size-base;
 }
-h2 {
+h2, .h2 {
   font-family: $font-family-medium;
   font-size: $font-size-h2;
   text-transform: uppercase;
@@ -56,6 +57,11 @@ a:hover {
 // Color CSS
 .primary-text {
   color: $primary-color;
+}
+
+// Shadow CSS
+.image-shadow {
+  box-shadow: $image-shadow;
 }
 
 // Form CSS
@@ -333,8 +339,15 @@ a:hover {
   padding: 8rem 0 0;
 
   .collection-box {
+
     figure {
       margin: 0;
+
+      > a {
+        margin-bottom: 1rem;
+        border: 1px solid $black;
+      }
+
       .p-title {
         color: $primary-color;
         font-family: $font-family-medium;
