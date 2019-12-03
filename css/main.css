@@ -7947,6 +7947,17 @@ a:hover {
 .fancy-text {
   font-family: "hublland-regular"; }
 
+.section-number {
+  position: absolute;
+  bottom: 4rem;
+  left: -2rem;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); }
+  .section-number .seprator {
+    vertical-align: middle;
+    margin: 0; }
+
 .primary-text {
   color: #75223D; }
 
@@ -8131,6 +8142,8 @@ a:hover {
     color: #0D0D0D; }
 
 .portfolio {
+  position: relative;
+  overflow: hidden;
   padding: 8rem 0; }
   .portfolio .p-title {
     color: #75223D;
@@ -8141,8 +8154,7 @@ a:hover {
 .work {
   position: relative;
   padding: 8rem 0 5rem;
-  background-color: #999799;
-  color: #ffffff; }
+  background-color: #999799; }
   .work ul li {
     text-align: center;
     margin-bottom: 2rem; }
@@ -8219,8 +8231,6 @@ a:hover {
     text-transform: inherit; }
   .contact h2 {
     color: #ffffff; }
-  .contact .contact-left {
-    padding: 1rem 2rem; }
   .contact ul {
     list-style: none;
     padding: 0;
@@ -8235,6 +8245,10 @@ a:hover {
           color: #75223D;
           text-decoration: none;
           transition: color .15s ease-in-out; }
+  .contact .social-links {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem; }
 
 .copyright {
   position: relative;
