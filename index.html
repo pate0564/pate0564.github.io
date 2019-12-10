@@ -27,6 +27,7 @@
 
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="/">
+            <!-- <p class="fancy-text">Payal Patel</p> -->
             <img src="../images/logo.svg" alt="sitelogo" width="70%">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,12 +51,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="#collection">Portfolio</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" target="_blank" href="pdf/Resume.pdf">Resume</a>
-            </li> -->
-            <!-- <li class="nav-item">
-                <a class="nav-link" target="_blank" href="pdf/Portfolio.pdf">Portfolio</a>
-            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
@@ -234,19 +229,28 @@
               <h2>Portfolio</h2>
               <p class="seprator mx-auto"></p>
               <p>A collection of some of the most valuable professional work.</p>
-              <ul class="list-group list-group-horizontal">
-                <li class="list-group-item">Design</li>
-                <li class="list-group-item">Research</li>
-                <li class="list-group-item">Programming</li>
+              <ul class="list-group list-group-horizontal text-right" id="filter">
+                <li class="list-group-item active font-weight-bold font-italic">
+                  <a class="all" href="javascript:void(0);">All</a>
+                </li>
+                <li class="list-group-item font-weight-bold font-italic">
+                  <a class="design" href="javascript:void(0);">Design</a>
+                </li>
+                <li class="list-group-item font-weight-bold font-italic">
+                  <a class="research" href="javascript:void(0);">Research</a>
+                </li>
+                <li class="list-group-item font-weight-bold font-italic">
+                  <a class="programming" href="javascript:void(0);">Programming</a>
+                </li>
               </ul>
           </div>
           <div class="col-lg-8">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
-              <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3" id="filter-content">
+              <div class="col design">
                 <div class="collection-box">
               	    <figure>
                       <a href="./graphics-design.html" target="_blank" class="hovereffect">
-              	        <img src="images/moodboard/3.jpg" alt="3">
+              	        <img src="images/moodboard/index.jpg" alt="index">
               	        <figcaption class="overlay">
                           <p class="h5 p-title">Graphics Design</p>
                           <p class="p-desc">Design</p>
@@ -255,111 +259,110 @@
               	    </figure>
               	</div>
               </div>
-              <div class="col">
+              <div class="col research">
                 <div class="collection-box">
               	    <figure>
                       <a href="./wireframes.html" target="_blank" class="hovereffect">
-              	        <img src="images/wireframe/5.jpg" class="img-fluid" alt="5">
+              	        <img src="images/wireframe/index.jpg" class="img-fluid" alt="index">
               	        <figcaption class="overlay">
-                          <p class="h5 p-title">Wireframes</p>
+                          <p class="h5 p-title">Web Wireframe</p>
                           <p class="p-desc">Research</p>
               	        </figcaption>
                       </a>
               	    </figure>
               	</div>
               </div>
-              <div class="col">
+              <div class="col programming">
                 <div class="collection-box">
               	    <figure>
                       <a href="./bootstrap-angular.html" target="_blank" class="hovereffect">
-              	        <img src="images/gates-ui/1.jpg" class="img-fluid" alt="1">
+              	        <img src="images/gates-ui/index.jpg" class="img-fluid" alt="index">
               	        <figcaption class="overlay">
-                          <p class="h5 p-title">Gates UI</p>
-                          <p class="p-desc">Bootstrap & Angular JS</p>
+                          <p class="h5 p-title">Bootstrap & Angular JS</p>
+                          <p class="p-desc">Programming</p>
               	        </figcaption>
                       </a>
               	    </figure>
               	</div>
               </div>
-              <div class="col">
+              <div class="col research">
                 <div class="collection-box">
               	    <figure>
-                      <a href="https://fritzandrose.com/" target="_blank" class="hovereffect">
-              	        <img src="images/moodboard/4.png" class="img-fluid" alt="p02">
+                      <a href="./mobile-wireframe.html" target="_blank" class="hovereffect">
+              	        <img src="images/mobile-wireframe/index.jpg" class="img-fluid" alt="index">
               	        <figcaption class="overlay">
-                          <p class="h5 p-title">Coming Up</p>
-                          <p class="p-desc">---</p>
+                          <p class="h5 p-title">Mobile Wireframe</p>
+                          <p class="p-desc">Research</p>
               	        </figcaption>
                       </a>
               	    </figure>
               	</div>
               </div>
-              <div class="col">
+              <div class="col design">
                 <div class="collection-box">
               	    <figure>
-                      <a href="https://fritzandrose.com/" target="_blank" class="hovereffect">
-              	        <img src="images/moodboard/4.png" class="img-fluid" alt="p02">
+                      <a href="./material-design.html" target="_blank" class="hovereffect">
+              	        <img src="images/skillshape/index.jpg" class="img-fluid" alt="index">
               	        <figcaption class="overlay">
-                          <p class="h5 p-title">Coming Up</p>
-                          <p class="p-desc">---</p>
+                          <p class="h5 p-title">Material Design</p>
+                          <p class="p-desc">Design</p>
               	        </figcaption>
                       </a>
               	    </figure>
               	</div>
               </div>
-              <div class="col">
+              <div class="col design">
                 <div class="collection-box">
               	    <figure>
-                      <a href="https://fritzandrose.com/" target="_blank" class="hovereffect">
-              	        <img src="images/moodboard/4.png" class="img-fluid" alt="p02">
+                      <a href="./motion-graphics.html" target="_blank" class="hovereffect">
+              	        <img src="images/motion-graphics/index.jpg" class="img-fluid" alt="index">
               	        <figcaption class="overlay">
-                          <p class="h5 p-title">Coming Up</p>
-                          <p class="p-desc">---</p>
+                          <p class="h5 p-title">Motion Graphics</p>
+                          <p class="p-desc">Design</p>
               	        </figcaption>
                       </a>
               	    </figure>
               	</div>
               </div>
-              <div class="col">
+              <div class="col design">
                 <div class="collection-box">
               	    <figure>
-                      <a href="https://fritzandrose.com/" target="_blank" class="hovereffect">
-              	        <img src="images/moodboard/4.png" class="img-fluid" alt="p02">
+                      <a href="./branding.html" target="_blank" class="hovereffect">
+              	        <img src="images/branding/index.jpg" class="img-fluid" alt="index">
               	        <figcaption class="overlay">
-                          <p class="h5 p-title">Coming Up</p>
-                          <p class="p-desc">---</p>
+                          <p class="h5 p-title">Branding</p>
+                          <p class="p-desc">Design</p>
               	        </figcaption>
                       </a>
               	    </figure>
               	</div>
               </div>
-              <div class="col">
+              <div class="col design research">
                 <div class="collection-box">
               	    <figure>
-                      <a href="https://fritzandrose.com/" target="_blank" class="hovereffect">
-              	        <img src="images/moodboard/4.png" class="img-fluid" alt="p02">
+                      <a href="./ios-app-design.html" target="_blank" class="hovereffect">
+              	        <img src="images/ios-app-design/index.jpg" class="img-fluid" alt="index">
               	        <figcaption class="overlay">
-                          <p class="h5 p-title">Coming Up</p>
-                          <p class="p-desc">---</p>
+                          <p class="h5 p-title">iOS Mobile App Design</p>
+                          <p class="p-desc">Research & Design</p>
               	        </figcaption>
                       </a>
               	    </figure>
               	</div>
               </div>
-              <div class="col">
+              <div class="col design">
                 <div class="collection-box">
               	    <figure>
-                      <a href="https://fritzandrose.com/" target="_blank" class="hovereffect">
-              	        <img src="images/moodboard/4.png" class="img-fluid" alt="p02">
+                      <a href="./logo-design.html" target="_blank" class="hovereffect">
+              	        <img src="images/logo-design/index.jpg" class="img-fluid" alt="index">
               	        <figcaption class="overlay">
-                          <p class="h5 p-title">Coming Up</p>
-                          <p class="p-desc">---</p>
+                          <p class="h5 p-title">Logo Design</p>
+                          <p class="p-desc">Design</p>
               	        </figcaption>
                       </a>
               	    </figure>
               	</div>
               </div>
-
             </div>
           </div>
         </div>
@@ -397,15 +400,6 @@
           </div>
           <div class="col-md-4">
             <a href="pdf/Resume.pdf" target="_blank" class="btn btn-secondary">View</a>
-          </div>
-        </div>
-        <div class="row mb-md-4 align-items-center">
-          <div class="col-md-8">
-            <p class="seprator"></p>
-            <h2>CV</h2>
-          </div>
-          <div class="col-md-4">
-            <a href="pdf/cv.pdf" target="_blank" class="btn btn-secondary">View</a>
           </div>
         </div>
       </section>
