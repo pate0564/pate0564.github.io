@@ -33,7 +33,7 @@ h2, .h2 {
   letter-spacing: 1.5px;
 }
 a {
-  color:$primary-color;
+  color: $primary-color;
   text-decoration: none !important;
   transition: color .15s ease-in-out;
 }
@@ -126,6 +126,24 @@ a:hover {
   }
 }
 
+  // List group item
+  li.list-group-item {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    &.active {
+      background: transparent;
+      a {
+        color: $secondary-color;
+      }
+    }
+    &:not(:last-child) {
+      a {
+            padding: 0 1rem;
+      }
+    }
+  }
+
 // Secondary Button
 .btn-secondary {
   background-color: $btn-secondary-bg;
@@ -202,7 +220,7 @@ a:hover {
   right: 20px;
   bottom: 20px;
   left: 20px;
-  border: 1px solid #fff;
+  border: 1px solid $white;
   content: '';
   opacity: 0;
   filter: alpha(opacity=0);
@@ -350,6 +368,10 @@ a:hover {
   overflow: hidden;
   height: 100vh;
   padding: 8rem 0 0;
+
+  ul.list-group {
+    justify-content: flex-end;
+  }
 
   .collection-box {
 

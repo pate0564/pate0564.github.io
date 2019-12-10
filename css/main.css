@@ -7998,6 +7998,17 @@ a:hover {
     .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
       box-shadow: 0 0 0 0.2rem #75223D; }
 
+li.list-group-item {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+  li.list-group-item.active {
+    background: transparent; }
+    li.list-group-item.active a {
+      color: #C69A75; }
+  li.list-group-item:not(:last-child) a {
+    padding: 0 1rem; }
+
 .btn-secondary {
   background-color: #C69A75;
   color: #ffffff;
@@ -8058,7 +8069,7 @@ a:hover {
   right: 20px;
   bottom: 20px;
   left: 20px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   content: '';
   opacity: 0;
   filter: alpha(opacity=0);
@@ -8168,6 +8179,8 @@ a:hover {
   overflow: hidden;
   height: 100vh;
   padding: 8rem 0 0; }
+  .collection ul.list-group {
+    justify-content: flex-end; }
   .collection .collection-box figure {
     margin: 0; }
     .collection .collection-box figure > a {
